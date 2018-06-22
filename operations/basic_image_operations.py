@@ -5,7 +5,9 @@ img = cv2.imread('watch.jpg', cv2.IMREAD_COLOR)
 
 px = img [55,55]
 
-img[100:150, 100:150] = [0,0,0]
+section = img[100:150, 100:150]
+
+img[0:50, 0:50] = section
 
 cv2.imshow('image', img)
 cv2.waitKey(0)
